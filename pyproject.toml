@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "bewaiseai"
+version = "0.1.0"
+description = ""
+authors = ["Leonid Sliusar <loslyusar@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.2"
+uvicorn = "^0.23.2"
+pydantic-settings = "^2.0.3"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.21"}
+asyncpg = "^0.28.0"
+alembic = "^1.12.0"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.0"
+aiohttp = "^3.8.6"
+redis = "^5.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+pytest-asyncio = "^0.21.1"
+pytest-mock = "^3.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = "./app"
+testpaths = [
+    "tests",
+]
