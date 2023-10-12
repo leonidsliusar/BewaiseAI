@@ -49,3 +49,50 @@ curl -X 'POST' \
   "questions_num": 1
 }'
 
+Project Tree:
+
+    .
+    ├── app
+    │   ├── alembic.ini
+    │   ├── api
+    │   │   ├── __init__.py
+    │   │   └── v1.py
+    │   ├── core
+    │   │   ├── config.py
+    │   │   ├── dals.py
+    │   │   ├── __init__.py
+    │   │   ├── models.py
+    │   │   ├── schema.py
+    │   │   └── services.py
+    │   ├── __init__.py
+    │   ├── main.py
+    │   ├── migration
+    │   │   ├── env.py
+    │   │   ├── README
+    │   │   ├── script.py.mako
+    │   │   └── versions
+    │   │       ├── cb34a9e53b12_init.py
+    │   ├── static
+    │   │   ├── css
+    │   │   │   └── style.css
+    │   │   ├── index.html
+    │   │   └── script
+    │   │       └── script.js
+    │   └── utils
+    │       ├── __init__.py
+    ├── docker-compose.yml
+    ├── Dockerfile
+    ├── poetry.lock
+    ├── pyproject.toml
+    ├── readme_img
+    │   ├── img2.png
+    │   └── img.png
+    ├── README.MD
+    └── tests
+        ├── conftest.py
+        ├── docker-compose.yml
+        ├── __init__.py
+        ├── test_dals.py
+        ├── test_models.py
+        └── test_services.py
+  
